@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+        <TextView
+            android:id="@+id/ARTextDisplay"
+            android:layout_width="match_parent"  
+			android:layout_height="match_parent"
+            android:background="@drawable/shape_test"
+            android:textColor="#fffff0"
+            android:textSize="24sp" 
+            android:layout_below="@+id/ARClose"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            
+            />
+        
+        <com.example.docar1.ZoomImageView
+            android:id="@+id/ARImageDisplay"
+            android:layout_width="match_parent"  
+			android:layout_height="match_parent"            
+            android:visibility="invisible"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/ARClose"
+            />
+
+         <VideoView
+             android:id="@+id/ARVideoDisplay"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:visibility="invisible"
+              />
+
+        <ImageButton
+            android:id="@+id/ARClose"
+            android:layout_width="30dp"
+        	android:layout_height="30dp"
+        	android:layout_alignParentTop="true"
+        	android:background="@drawable/ic_action_remove"	
+        	android:layout_alignParentRight="true"
+        	android:visibility="invisible"
+        	/>
+    
+    
+    </RelativeLayout>

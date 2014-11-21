@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.docar1.MainUIActivity" >
+
+     <item
+        android:id="@+id/action_scan"
+        android:icon="@drawable/ofm_camera_icon"
+        android:showAsAction="always"
+        android:title="@string/action_scan"/>
+     <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/ic_action_favorite"
+        android:showAsAction="always"
+        android:title="@string/action_favorite"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

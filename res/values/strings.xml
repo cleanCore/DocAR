@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string name="app_name">DocAR1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_scan">Scan</string>
+	<string name="action_favorite">favorite</string>
+    <string-array name="jazz_artist_names">
+      <item>CS Department Brochure</item>
+      <item>Chemical Department Brochure</item>
+      <item>Physical Department Brochure</item>
+      <item>Department Brochure</item>
+      <item>Department Brochure</item>
+      <item>Department Brochure</item>
+      <item>Department Brochure</item>
+      <item>Department Brochure</item>
+      <item>Department Brochure</item>
+      <item>Department Brochure</item>
+      <item>Department Brochure</item>
+      <item>Department Brochure</item>
+      <item>Department Brochure</item>
+      <item>Department Brochure</item>
+      <item>Department Brochure</item>
+      <item>Department Brochure</item>
+    </string-array>
+    <string-array name="jazz_artist_albums">
+      <item>CS department, chair man, Dr. Chao, the famous professor, whose reserach is about AR</item>
+      <item>I will fill it out later</item>
+      <item>I will fill it out later and later</item>
+      <item>I will fill it out later,,,,maybe forever</item>
+    </string-array>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+
+    <ImageView
+        android:id="@+id/topMargin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+         />
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar"
+        android:id="@+id/loading_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/loupeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/topMargin"
+        >
+
+        <ImageView
+            android:id="@+id/leftMargin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+             />
+
+        <ImageView
+            android:id="@+id/loupe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/leftMargin"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+             />
+
+        <ImageView
+            android:id="@+id/rightMargin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/loupe"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/wordList"
+        android:layout_width="360px"
+        android:layout_height="100px"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true" 
+        android:layout_alignParentTop="true" 
+        >
+
+        <TextView
+            android:id="@+id/TextDisplay"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_toLeftOf="@+id/ImageDisplay"
+            android:layout_marginRight="30px"
+            android:background="@drawable/shape_test"
+            android:textColor="#ff0000"
+            android:textSize="16sp" 
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/ImageDisplay"
+            android:layout_width="100px"
+            android:layout_height="100px"
+        	android:layout_toLeftOf="@+id/VideoDisplayLayout"
+            android:layout_marginRight="30px"
+            android:scaleType="fitXY"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/VideoDisplayLayout"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+			 >
+
+            <ImageButton
+                android:id="@+id/VideoDisplay"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_action_video" 
+                android:visibility="invisible" />
+        </RelativeLayout>
+       
+    </RelativeLayout>
+
+</RelativeLayout>
